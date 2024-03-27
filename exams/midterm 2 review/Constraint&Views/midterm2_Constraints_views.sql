@@ -151,3 +151,101 @@ WHERE EXISTS (
     FROM D
     WHERE D.Name = WHD.Name AND D.Age BETWEEN 25 AND 30
 );
+
+
+
+-- 2019 fall
+
+-- -- 1. 
+BuyerName references Person(Name),
+SellerName references Person(Name), 
+StoreID references Store(ID), 
+SerialNo references Product(SerialNo)
+
+-- -- 2.
+-- insert: no
+-- delete: yes   Purchase should be checked
+-- update: yes   Purchase should be checked
+-- no. it's part of pk in Purchase. cannot be null
+
+-- -- 3.
+create view BrandModelView as(
+  select p.Brand, p.Model, count(*) as total
+  from Purchase pcs
+  inner join Product p
+  on pcs.SerialNo = p.SerialNo
+  group by p.Brand, p.Model
+);
+
+-- -- 4.
+select sum(total)
+from BrandModelView
+group by Brand;
+
+
+
+-- 2018 spring afternoon
+-- -- 1.
+create table Likes (
+  drinker VARCHAR(100),
+  beer VARCHAR(100),
+  primary key (drinker, beer),
+  foreign key (drinker) references Drinker(name) on delete cascade on update cascade,
+  foreign key (beer) references Beers(name) on delete cascade on update cascade
+);
+
+-- -- 2.
+-- -- 3.
+create view SellsView as(
+  select b.city, max(s.price) 
+  from Sells s
+  inner join Bars b on b.name = s.bar
+  group by b.city;
+);
+
+-- -- 5. 
+db.Sells.find(
+  {
+    beer: "Bud",
+    price: { $gt: 3 }
+  },
+  {
+    _id: 0, bar: 1
+  }
+);
+
+-- 2018 fall
+-- -- 1.
+select distinct R.A, R.B, S.C from R
+left outer join S
+on R.A = S.A
+union
+select distinct R.A, R.B, S.C from R
+right outer join S
+on R.A = S.A;
+
+
+
+
+-- 2017 spring
+-- -- 1. [2 points] Write a SQL query to “find brands such that at least five laptops for each brand have been sold.”
+select p.Brand from Product p
+inner join Purchase pu
+on p.SerialNo = pu.SerialNo
+group by p.Brand
+having count(distinct p.SerialNo) >= 5;
+
+-- -- 4. 
+create view BrandStoreView as (
+  select count(*) as total from Purchase pu
+  inner join Product p
+  on pu.SerialNo = p.SerialNo
+  inner join Store s
+  on s.ID = pu.StoreID
+  group by p.Brand, s.City
+);
+-- -- -- correct
+
+-- -- 5.
+select Brand, sum(total) from BrandStoreView
+group by Brand;

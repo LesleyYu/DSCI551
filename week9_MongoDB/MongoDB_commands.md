@@ -195,6 +195,7 @@ unset就是把这个属性去掉，参数可以填任何东西。反正它也没
 
 
 ### Aggregation 
+The aggregate method in MongoDB is used for performing data aggregation operations, which involve *grouping*, *transforming*, and analyzing data from one or *more* collections. 
 
 ##### sum
 

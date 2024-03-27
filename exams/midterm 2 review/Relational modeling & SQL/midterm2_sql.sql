@@ -9,13 +9,38 @@
 
 
 -- 2017 fall morning 
-
 -- -- 1. 
+create view CanDrink as     -- 重要！！！！！create view CanDrink as blahblah
+select distinct f.drinker, s.beer 
+from Frequents f
+inner join Sells s
+on f.bar = s.bar;
 
 -- -- 2. 
--- -- -- b.
+select l.drinker, l.beer from CanDrink cd
+right outer join Likes l
+on cd.drinker = l.drinker
+where cd.beer is null
 
--- -- -- c.
+-- -- 3. 
+select l.drinker, l.beer from Likes l
+left outer join (
+  select distinct f.drinker, s.beer 
+  from Frequents f
+  inner join Sells s
+  on f.bar = s.bar
+) as cd
+on cd.drinker = l.drinker
+where cd.beer is null
+
+-- -- 3. 
+select cd.drinker from CanDrink cd
+inner join Drinker d
+on cd.drinker = d.name
+group by cd.drinker
+having count(beer) >= 3
+where d.city = "LA"
+
 
 
 
@@ -29,25 +54,25 @@ where a.beer_name in (
 );
 -- -- -- -- 答案：
 select a.color, b.manf from Ales a natural Join Beers b
-where a.beer_name = b.beer_name
+where a.beer_name = b.beer_name;
 
 -- -- -- b.
 select d.drinker_name from Drinker d natural join Likes l
 where l.beer_name in (
   select a.beer_name from Ales a
-)
+);
 -- -- -- -- 答案：
 select d.drinker_name from Drinker d, Likes l
 where d.drinker_name = l.drinker_name   -- 区别在这里！不用natural join
 and l.beer_name in (
   select a.beer_name from Ales a
-)
+);
 
 -- -- -- c. 
 select distinct b1.manf from Beers b1, Beers b2 
 where (
   b1.beer_name <> b2.beer_name and b1.manf = b2.manf
-)
+);
 
 
 
@@ -58,11 +83,11 @@ where (
 select d.name from Drinker d, Beers b 
 where d.LikedBeers = d.name
 and
-d.name = 'Steve'
+d.name = 'Steve';
 -- -- -- -- 答案：好傻 不用用俩表啊.而且还返回错了。不是人名是酒名
 select LikedBeers as BeerLikedBySteve
 from Drinker
-where name = 'Steve'
+where name = 'Steve';
 
 -- -- -- b.
 select distinct d.name from Drinker d, Ales a
@@ -76,10 +101,10 @@ where d.LikedBeers in (
 -- -- -- c.
 select b1.name, b2.name from Beers b1, Beers b2
 where b1.name <> b2.name and b1.manf = b2.manf 
-order by b1.name, b2.name
+order by b1.name, b2.name;
 -- -- -- -- 答案：
 select b1.name, b2.name from Beers b1, Beers b2
-where b1.name < b2.name and b1.manf = b2.manf
+where b1.name < b2.name and b1.manf = b2.manf;
 -- -- -- -- 审题错误啦
 
 
@@ -91,7 +116,7 @@ where b1.name < b2.name and b1.manf = b2.manf
 select b.name from Beers b
 where b.name not in (
   select s.beer from Sells s
-)
+);
 -- -- -- b.
 select b.name from Beers b 
 left outer join Sells s
@@ -101,19 +126,34 @@ where s.bar is null
 select b.name from Beers b
 where b.name not exists (
   ...
-)
+);
 -- -- -- -- 答案：
 select b.name from Beers b
 where not exists (
   select s.beer from Sells s
   where s.beer = b.name
-)
+);
 
 -- -- 2.
 -- a) insert into Sells table
 -- b) delete from Beers table
 -- c) update Beers table or Sells table
 -- 对咯！
+
+
+
+
+-- 2017 spring
+
+-- -- 2. 
+-- -- -- a.
+select p.name from Person p
+where p.phone like "%1234";
+
+-- -- -- b.
+select serialNo from Laptop
+where hardDrive is null
+
 
 
 
@@ -185,3 +225,31 @@ WHERE Likes.drinker = Frequents.drinker
 
 
 
+
+-- 2019 fall 
+
+-- -- 1. 
+-- -- -- method 1
+select distinct l.beer from Frequents f
+inner join Likes l
+on f.drinker = l.drinker
+where bar = "Joe\'bar" or "Bob\'s bar"
+
+-- -- -- method 1
+select distinct l.beer from Likes l
+where l.drinker in (
+  select distinct f.drinker
+  from Frequents f
+  where bar = "Joe\'bar" or "Bob\'s bar"
+)
+
+-- -- 2. 
+select d.name from Drinker d
+inner join Likes l
+on d.name = l.drinker
+where d.phone like "626%"
+and l.drinker not in (
+  select distinct l1.drinker 
+  from Likes l1, Likes l2
+  where l1.drinker=l2.drinker and l1.beer<>l2.beer
+)

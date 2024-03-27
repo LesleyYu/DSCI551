@@ -1,0 +1,30 @@
+python3 hw2.py file0.xml file1.xml add_book 1 '{"author": "me", "title": "333", "year": 2024, "price": "2.4"}'
+
+python3 hw2.py file0.xml file1.xml add_book 31 '{"author": "Lesley", "title": "ehfbksd", "year": 2023, "price": "43"}'
+
+python3 hw2.py file0.xml file1.xml add_book 64 '{"author": "Liujia", "title": "hi", "year": 2022, "price": "12"}'
+
+python3 hw2.py file0.xml file1.xml add_book 542 '{"author": "xiaoying", "title": "how to get 402", "year": 2022, "price": "23"}'
+
+python3 hw2.py file0.xml file1.xml add_book 42 '{"author": "xiaoyin", "title": "from 0 to 1", "year": 2012, "price": "54"}'
+
+python3 hw2.py file0.xml file1.xml add_book 45 '{"author": "Lesley", "title": "Universal Studio", "year": 2024, "price": "179"}'
+
+python3 hw2.py file0.xml file1.xml add_book 84 '{"author": "Lesley", "title": "Can Help", "year": 2020, "price": "19"}'
+
+
+
+
+
+
+python3 hw2.py file0.xml file1.xml search_by_author "John Smith"
+
+python3 hw2.py file0.xml file1.xml search_by_author "Lesley"
+
+
+
+
+
+
+
+python3 hw2.py file0.xml file1.xml search_by_year 2022

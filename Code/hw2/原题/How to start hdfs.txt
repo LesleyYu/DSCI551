@@ -1,0 +1,4 @@
+sudo service mysql stop
+bin/hdfs namenode -format
+sbin/start-dfs.sh
+jps

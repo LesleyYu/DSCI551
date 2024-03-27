@@ -1,0 +1,237 @@
+In MongoDB:
+
+The city table is :
+{"Name": "Kabul", "CountryCode": "AFG", "District": "Kabol", "Population": 1780000, "_id": {"ID": 1}}
+{"Name": "Qandahar", "CountryCode": "AFG", "District": "Qandahar", "Population": 237500, "_id": {"ID": 2}}
+{"Name": "Herat", "CountryCode": "AFG", "District": "Herat", "Population": 186800, "_id": {"ID": 3}}
+{"Name": "Mazar-e-Sharif", "CountryCode": "AFG", "District": "Balkh", "Population": 127800, "_id": {"ID": 4}}
+{"Name": "Amsterdam", "CountryCode": "NLD", "District": "Noord-Holland", "Population": 731200, "_id": {"ID": 5}}
+{"Name": "Rotterdam", "CountryCode": "NLD", "District": "Zuid-Holland", "Population": 593321, "_id": {"ID": 6}}
+{"Name": "Haag", "CountryCode": "NLD", "District": "Zuid-Holland", "Population": 440900, "_id": {"ID": 7}}
+{"Name": "Utrecht", "CountryCode": "NLD", "District": "Utrecht", "Population": 234323, "_id": {"ID": 8}}
+{"Name": "Eindhoven", "CountryCode": "NLD", "District": "Noord-Brabant", "Population": 201843, "_id": {"ID": 9}}
+{"Name": "Tilburg", "CountryCode": "NLD", "District": "Noord-Brabant", "Population": 193238, "_id": {"ID": 10}}
+{"Name": "Groningen", "CountryCode": "NLD", "District": "Groningen", "Population": 172701, "_id": {"ID": 11}}
+{"Name": "Breda", "CountryCode": "NLD", "District": "Noord-Brabant", "Population": 160398, "_id": {"ID": 12}}
+{"Name": "Apeldoorn", "CountryCode": "NLD", "District": "Gelderland", "Population": 153491, "_id": {"ID": 13}}
+{"Name": "Nijmegen", "CountryCode": "NLD", "District": "Gelderland", "Population": 152463, "_id": {"ID": 14}}
+{"Name": "Enschede", "CountryCode": "NLD", "District": "Overijssel", "Population": 149544, "_id": {"ID": 15}}
+{"Name": "Haarlem", "CountryCode": "NLD", "District": "Noord-Holland", "Population": 148772, "_id": {"ID": 16}}
+{"Name": "Almere", "CountryCode": "NLD", "District": "Flevoland", "Population": 142465, "_id": {"ID": 17}}
+{"Name": "Arnhem", "CountryCode": "NLD", "District": "Gelderland", "Population": 138020, "_id": {"ID": 18}}
+{"Name": "Zaanstad", "CountryCode": "NLD", "District": "Noord-Holland", "Population": 135621, "_id": {"ID": 19}}
+{"Name": "\u00c2\u00b4s-Hertogenbosch", "CountryCode": "NLD", "District": "Noord-Brabant", "Population": 129170, "_id": {"ID": 20}}
+{"Name": "Amersfoort", "CountryCode": "NLD", "District": "Utrecht", "Population": 126270, "_id": {"ID": 21}}
+{"Name": "Maastricht", "CountryCode": "NLD", "District": "Limburg", "Population": 122087, "_id": {"ID": 22}}
+{"Name": "Dordrecht", "CountryCode": "NLD", "District": "Zuid-Holland", "Population": 119811, "_id": {"ID": 23}}
+{"Name": "Leiden", "CountryCode": "NLD", "District": "Zuid-Holland", "Population": 117196, "_id": {"ID": 24}}
+{"Name": "Haarlemmermeer", "CountryCode": "NLD", "District": "Noord-Holland", "Population": 110722, "_id": {"ID": 25}}
+{"Name": "Zoetermeer", "CountryCode": "NLD", "District": "Zuid-Holland", "Population": 110214, "_id": {"ID": 26}}
+{"Name": "Emmen", "CountryCode": "NLD", "District": "Drenthe", "Population": 105853, "_id": {"ID": 27}}
+{"Name": "Zwolle", "CountryCode": "NLD", "District": "Overijssel", "Population": 105819, "_id": {"ID": 28}}
+{"Name": "Ede", "CountryCode": "NLD", "District": "Gelderland", "Population": 101574, "_id": {"ID": 29}}
+{"Name": "Delft", "CountryCode": "NLD", "District": "Zuid-Holland", "Population": 95268, "_id": {"ID": 30}}
+{"Name": "Heerlen", "CountryCode": "NLD", "District": "Limburg", "Population": 95052, "_id": {"ID": 31}}
+{"Name": "Alkmaar", "CountryCode": "NLD", "District": "Noord-Holland", "Population": 92713, "_id": {"ID": 32}}
+{"Name": "Willemstad", "CountryCode": "ANT", "District": "Cura\u00c3\u00a7ao", "Population": 2345, "_id": {"ID": 33}}
+{"Name": "Tirana", "CountryCode": "ALB", "District": "Tirana", "Population": 270000, "_id": {"ID": 34}}
+{"Name": "Alger", "CountryCode": "DZA", "District": "Alger", "Population": 2168000, "_id": {"ID": 35}}
+{"Name": "Oran", "CountryCode": "DZA", "District": "Oran", "Population": 609823, "_id": {"ID": 36}}
+{"Name": "Constantine", "CountryCode": "DZA", "District": "Constantine", "Population": 443727, "_id": {"ID": 37}}
+{"Name": "Annaba", "CountryCode": "DZA", "District": "Annaba", "Population": 222518, "_id": {"ID": 38}}
+{"Name": "Batna", "CountryCode": "DZA", "District": "Batna", "Population": 183377, "_id": {"ID": 39}}
+{"Name": "S\u00c3\u00a9tif", "CountryCode": "DZA", "District": "S\u00c3\u00a9tif", "Population": 179055, "_id": {"ID": 40}}
+{"Name": "Sidi Bel Abb\u00c3\u00a8s", "CountryCode": "DZA", "District": "Sidi Bel Abb\u00c3\u00a8s", "Population": 153106, "_id": {"ID": 41}}
+{"Name": "Skikda", "CountryCode": "DZA", "District": "Skikda", "Population": 128747, "_id": {"ID": 42}}
+{"Name": "Biskra", "CountryCode": "DZA", "District": "Biskra", "Population": 128281, "_id": {"ID": 43}}
+{"Name": "Blida (el-Boulaida)", "CountryCode": "DZA", "District": "Blida", "Population": 127284, "_id": {"ID": 44}}
+{"Name": "B\u00c3\u00a9ja\u00c3\u00afa", "CountryCode": "DZA", "District": "B\u00c3\u00a9ja\u00c3\u00afa", "Population": 117162, "_id": {"ID": 45}}
+{"Name": "Mostaganem", "CountryCode": "DZA", "District": "Mostaganem", "Population": 115212, "_id": {"ID": 46}}
+{"Name": "T\u00c3\u00a9bessa", "CountryCode": "DZA", "District": "T\u00c3\u00a9bessa", "Population": 112007, "_id": {"ID": 47}}
+{"Name": "Tlemcen (Tilimsen)", "CountryCode": "DZA", "District": "Tlemcen", "Population": 110242, "_id": {"ID": 48}}
+{"Name": "B\u00c3\u00a9char", "CountryCode": "DZA", "District": "B\u00c3\u00a9char", "Population": 107311, "_id": {"ID": 49}}
+{"Name": "Tiaret", "CountryCode": "DZA", "District": "Tiaret", "Population": 100118, "_id": {"ID": 50}}
+{"Name": "Ech-Chleff (el-Asnam)", "CountryCode": "DZA", "District": "Chlef", "Population": 96794, "_id": {"ID": 51}}
+{"Name": "Gharda\u00c3\u00afa", "CountryCode": "DZA", "District": "Gharda\u00c3\u00afa", "Population": 89415, "_id": {"ID": 52}}
+{"Name": "Tafuna", "CountryCode": "ASM", "District": "Tutuila", "Population": 5200, "_id": {"ID": 53}}
+{"Name": "Fagatogo", "CountryCode": "ASM", "District": "Tutuila", "Population": 2323, "_id": {"ID": 54}}
+{"Name": "Andorra la Vella", "CountryCode": "AND", "District": "Andorra la Vella", "Population": 21189, "_id": {"ID": 55}}
+{"Name": "Luanda", "CountryCode": "AGO", "District": "Luanda", "Population": 2022000, "_id": {"ID": 56}}
+{"Name": "Huambo", "CountryCode": "AGO", "District": "Huambo", "Population": 163100, "_id": {"ID": 57}}
+{"Name": "Lobito", "CountryCode": "AGO", "District": "Benguela", "Population": 130000, "_id": {"ID": 58}}
+{"Name": "Benguela", "CountryCode": "AGO", "District": "Benguela", "Population": 128300, "_id": {"ID": 59}}
+{"Name": "Namibe", "CountryCode": "AGO", "District": "Namibe", "Population": 118200, "_id": {"ID": 60}}
+{"Name": "South Hill", "CountryCode": "AIA", "District": "\u00c2\u2013", "Population": 961, "_id": {"ID": 61}}
+{"Name": "The Valley", "CountryCode": "AIA", "District": "\u00c2\u2013", "Population": 595, "_id": {"ID": 62}}
+{"Name": "Saint John\u00c2\u00b4s", "CountryCode": "ATG", "District": "St John", "Population": 24000, "_id": {"ID": 63}}
+{"Name": "Dubai", "CountryCode": "ARE", "District": "Dubai", "Population": 669181, "_id": {"ID": 64}}
+{"Name": "Abu Dhabi", "CountryCode": "ARE", "District": "Abu Dhabi", "Population": 398695, "_id": {"ID": 65}}
+{"Name": "Sharja", "CountryCode": "ARE", "District": "Sharja", "Population": 320095, "_id": {"ID": 66}}
+{"Name": "al-Ayn", "CountryCode": "ARE", "District": "Abu Dhabi", "Population": 225970, "_id": {"ID": 67}}
+{"Name": "Ajman", "CountryCode": "ARE", "District": "Ajman", "Population": 114395, "_id": {"ID": 68}}
+{"Name": "Buenos Aires", "CountryCode": "ARG", "District": "Distrito Federal", "Population": 2982146, "_id": {"ID": 69}}
+{"Name": "La Matanza", "CountryCode": "ARG", "District": "Buenos Aires", "Population": 1266461, "_id": {"ID": 70}}
+{"Name": "C\u00c3\u00b3rdoba", "CountryCode": "ARG", "District": "C\u00c3\u00b3rdoba", "Population": 1157507, "_id": {"ID": 71}}
+{"Name": "Rosario", "CountryCode": "ARG", "District": "Santa F\u00c3\u00a9", "Population": 907718, "_id": {"ID": 72}}
+{"Name": "Lomas de Zamora", "CountryCode": "ARG", "District": "Buenos Aires", "Population": 622013, "_id": {"ID": 73}}
+{"Name": "Quilmes", "CountryCode": "ARG", "District": "Buenos Aires", "Population": 559249, "_id": {"ID": 74}}
+
+The country table is: 
+{"Name": "Aruba", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 193.0, "IndepYear": 0, "Population": 103000, "LifeExpectancy": 78.4, "GNP": 828.0, "GNPOld": 793.0, "LocalName": "Aruba", "GovernmentForm": "Nonmetropolitan Territory of The Netherlands", "HeadOfState": "Beatrix", "Capital": 129, "Code2": "AW", "_id": {"Code": "ABW"}}
+{"Name": "Afghanistan", "Continent": "Asia", "Region": "Southern and Central Asia", "SurfaceArea": 652090.0, "IndepYear": 1919, "Population": 22720000, "LifeExpectancy": 45.9, "GNP": 5976.0, "GNPOld": 0.0, "LocalName": "Afganistan/Afqanestan", "GovernmentForm": "Islamic Emirate", "HeadOfState": "Mohammad Omar", "Capital": 1, "Code2": "AF", "_id": {"Code": "AFG"}}
+{"Name": "Angola", "Continent": "Africa", "Region": "Central Africa", "SurfaceArea": 1246700.0, "IndepYear": 1975, "Population": 12878000, "LifeExpectancy": 38.3, "GNP": 6648.0, "GNPOld": 7984.0, "LocalName": "Angola", "GovernmentForm": "Republic", "HeadOfState": "Jos\u00c3\u00a9 Eduardo dos Santos", "Capital": 56, "Code2": "AO", "_id": {"Code": "AGO"}}
+{"Name": "Anguilla", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 96.0, "IndepYear": 0, "Population": 8000, "LifeExpectancy": 76.1, "GNP": 63.2, "GNPOld": 0.0, "LocalName": "Anguilla", "GovernmentForm": "Dependent Territory of the UK", "HeadOfState": "Elisabeth II", "Capital": 62, "Code2": "AI", "_id": {"Code": "AIA"}}
+{"Name": "Albania", "Continent": "Europe", "Region": "Southern Europe", "SurfaceArea": 28748.0, "IndepYear": 1912, "Population": 3401200, "LifeExpectancy": 71.6, "GNP": 3205.0, "GNPOld": 2500.0, "LocalName": "Shqip\u00c3\u00abria", "GovernmentForm": "Republic", "HeadOfState": "Rexhep Mejdani", "Capital": 34, "Code2": "AL", "_id": {"Code": "ALB"}}
+{"Name": "Andorra", "Continent": "Europe", "Region": "Southern Europe", "SurfaceArea": 468.0, "IndepYear": 1278, "Population": 78000, "LifeExpectancy": 83.5, "GNP": 1630.0, "GNPOld": 0.0, "LocalName": "Andorra", "GovernmentForm": "Parliamentary Coprincipality", "HeadOfState": "", "Capital": 55, "Code2": "AD", "_id": {"Code": "AND"}}
+{"Name": "Netherlands Antilles", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 800.0, "IndepYear": 0, "Population": 217000, "LifeExpectancy": 74.7, "GNP": 1941.0, "GNPOld": 0.0, "LocalName": "Nederlandse Antillen", "GovernmentForm": "Nonmetropolitan Territory of The Netherlands", "HeadOfState": "Beatrix", "Capital": 33, "Code2": "AN", "_id": {"Code": "ANT"}}
+{"Name": "United Arab Emirates", "Continent": "Asia", "Region": "Middle East", "SurfaceArea": 83600.0, "IndepYear": 1971, "Population": 2441000, "LifeExpectancy": 74.1, "GNP": 37966.0, "GNPOld": 36846.0, "LocalName": "Al-Imarat al-\u00c2\u00b4Arabiya al-Muttahida", "GovernmentForm": "Emirate Federation", "HeadOfState": "Zayid bin Sultan al-Nahayan", "Capital": 65, "Code2": "AE", "_id": {"Code": "ARE"}}
+{"Name": "Argentina", "Continent": "South America", "Region": "South America", "SurfaceArea": 2780400.0, "IndepYear": 1816, "Population": 37032000, "LifeExpectancy": 75.1, "GNP": 340238.0, "GNPOld": 323310.0, "LocalName": "Argentina", "GovernmentForm": "Federal Republic", "HeadOfState": "Fernando de la R\u00c3\u00baa", "Capital": 69, "Code2": "AR", "_id": {"Code": "ARG"}}
+{"Name": "Armenia", "Continent": "Asia", "Region": "Middle East", "SurfaceArea": 29800.0, "IndepYear": 1991, "Population": 3520000, "LifeExpectancy": 66.4, "GNP": 1813.0, "GNPOld": 1627.0, "LocalName": "Hajastan", "GovernmentForm": "Republic", "HeadOfState": "Robert Kot\u00c2\u0161arjan", "Capital": 126, "Code2": "AM", "_id": {"Code": "ARM"}}
+{"Name": "American Samoa", "Continent": "Oceania", "Region": "Polynesia", "SurfaceArea": 199.0, "IndepYear": 0, "Population": 68000, "LifeExpectancy": 75.1, "GNP": 334.0, "GNPOld": 0.0, "LocalName": "Amerika Samoa", "GovernmentForm": "US Territory", "HeadOfState": "George W. Bush", "Capital": 54, "Code2": "AS", "_id": {"Code": "ASM"}}
+{"Name": "Antarctica", "Continent": "Antarctica", "Region": "Antarctica", "SurfaceArea": 13120000.0, "IndepYear": 0, "Population": 0, "LifeExpectancy": 0.0, "GNP": 0.0, "GNPOld": 0.0, "LocalName": "\u00c2\u2013", "GovernmentForm": "Co-administrated", "HeadOfState": "", "Capital": 0, "Code2": "AQ", "_id": {"Code": "ATA"}}
+{"Name": "French Southern territories", "Continent": "Antarctica", "Region": "Antarctica", "SurfaceArea": 7780.0, "IndepYear": 0, "Population": 0, "LifeExpectancy": 0.0, "GNP": 0.0, "GNPOld": 0.0, "LocalName": "Terres australes fran\u00c3\u00a7aises", "GovernmentForm": "Nonmetropolitan Territory of France", "HeadOfState": "Jacques Chirac", "Capital": 0, "Code2": "TF", "_id": {"Code": "ATF"}}
+{"Name": "Antigua and Barbuda", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 442.0, "IndepYear": 1981, "Population": 68000, "LifeExpectancy": 70.5, "GNP": 612.0, "GNPOld": 584.0, "LocalName": "Antigua and Barbuda", "GovernmentForm": "Constitutional Monarchy", "HeadOfState": "Elisabeth II", "Capital": 63, "Code2": "AG", "_id": {"Code": "ATG"}}
+{"Name": "Australia", "Continent": "Oceania", "Region": "Australia and New Zealand", "SurfaceArea": 7741220.0, "IndepYear": 1901, "Population": 18886000, "LifeExpectancy": 79.8, "GNP": 351182.0, "GNPOld": 392911.0, "LocalName": "Australia", "GovernmentForm": "Constitutional Monarchy, Federation", "HeadOfState": "Elisabeth II", "Capital": 135, "Code2": "AU", "_id": {"Code": "AUS"}}
+{"Name": "Austria", "Continent": "Europe", "Region": "Western Europe", "SurfaceArea": 83859.0, "IndepYear": 1918, "Population": 8091800, "LifeExpectancy": 77.7, "GNP": 211860.0, "GNPOld": 206025.0, "LocalName": "\u00c3\u2013sterreich", "GovernmentForm": "Federal Republic", "HeadOfState": "Thomas Klestil", "Capital": 1523, "Code2": "AT", "_id": {"Code": "AUT"}}
+{"Name": "Azerbaijan", "Continent": "Asia", "Region": "Middle East", "SurfaceArea": 86600.0, "IndepYear": 1991, "Population": 7734000, "LifeExpectancy": 62.9, "GNP": 4127.0, "GNPOld": 4100.0, "LocalName": "Az\u00c3\u00a4rbaycan", "GovernmentForm": "Federal Republic", "HeadOfState": "Heyd\u00c3\u00a4r \u00c3\u201eliyev", "Capital": 144, "Code2": "AZ", "_id": {"Code": "AZE"}}
+{"Name": "Burundi", "Continent": "Africa", "Region": "Eastern Africa", "SurfaceArea": 27834.0, "IndepYear": 1962, "Population": 6695000, "LifeExpectancy": 46.2, "GNP": 903.0, "GNPOld": 982.0, "LocalName": "Burundi/Uburundi", "GovernmentForm": "Republic", "HeadOfState": "Pierre Buyoya", "Capital": 552, "Code2": "BI", "_id": {"Code": "BDI"}}
+{"Name": "Belgium", "Continent": "Europe", "Region": "Western Europe", "SurfaceArea": 30518.0, "IndepYear": 1830, "Population": 10239000, "LifeExpectancy": 77.8, "GNP": 249704.0, "GNPOld": 243948.0, "LocalName": "Belgi\u00c3\u00ab/Belgique", "GovernmentForm": "Constitutional Monarchy, Federation", "HeadOfState": "Albert II", "Capital": 179, "Code2": "BE", "_id": {"Code": "BEL"}}
+{"Name": "Benin", "Continent": "Africa", "Region": "Western Africa", "SurfaceArea": 112622.0, "IndepYear": 1960, "Population": 6097000, "LifeExpectancy": 50.2, "GNP": 2357.0, "GNPOld": 2141.0, "LocalName": "B\u00c3\u00a9nin", "GovernmentForm": "Republic", "HeadOfState": "Mathieu K\u00c3\u00a9r\u00c3\u00a9kou", "Capital": 187, "Code2": "BJ", "_id": {"Code": "BEN"}}
+{"Name": "Burkina Faso", "Continent": "Africa", "Region": "Western Africa", "SurfaceArea": 274000.0, "IndepYear": 1960, "Population": 11937000, "LifeExpectancy": 46.7, "GNP": 2425.0, "GNPOld": 2201.0, "LocalName": "Burkina Faso", "GovernmentForm": "Republic", "HeadOfState": "Blaise Compaor\u00c3\u00a9", "Capital": 549, "Code2": "BF", "_id": {"Code": "BFA"}}
+{"Name": "Bangladesh", "Continent": "Asia", "Region": "Southern and Central Asia", "SurfaceArea": 143998.0, "IndepYear": 1971, "Population": 129155000, "LifeExpectancy": 60.2, "GNP": 32852.0, "GNPOld": 31966.0, "LocalName": "Bangladesh", "GovernmentForm": "Republic", "HeadOfState": "Shahabuddin Ahmad", "Capital": 150, "Code2": "BD", "_id": {"Code": "BGD"}}
+{"Name": "Bulgaria", "Continent": "Europe", "Region": "Eastern Europe", "SurfaceArea": 110994.0, "IndepYear": 1908, "Population": 8190900, "LifeExpectancy": 70.9, "GNP": 12178.0, "GNPOld": 10169.0, "LocalName": "Balgarija", "GovernmentForm": "Republic", "HeadOfState": "Petar Stojanov", "Capital": 539, "Code2": "BG", "_id": {"Code": "BGR"}}
+{"Name": "Bahrain", "Continent": "Asia", "Region": "Middle East", "SurfaceArea": 694.0, "IndepYear": 1971, "Population": 617000, "LifeExpectancy": 73.0, "GNP": 6366.0, "GNPOld": 6097.0, "LocalName": "Al-Bahrayn", "GovernmentForm": "Monarchy (Emirate)", "HeadOfState": "Hamad ibn Isa al-Khalifa", "Capital": 149, "Code2": "BH", "_id": {"Code": "BHR"}}
+{"Name": "Bahamas", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 13878.0, "IndepYear": 1973, "Population": 307000, "LifeExpectancy": 71.1, "GNP": 3527.0, "GNPOld": 3347.0, "LocalName": "The Bahamas", "GovernmentForm": "Constitutional Monarchy", "HeadOfState": "Elisabeth II", "Capital": 148, "Code2": "BS", "_id": {"Code": "BHS"}}
+{"Name": "Bosnia and Herzegovina", "Continent": "Europe", "Region": "Southern Europe", "SurfaceArea": 51197.0, "IndepYear": 1992, "Population": 3972000, "LifeExpectancy": 71.5, "GNP": 2841.0, "GNPOld": 0.0, "LocalName": "Bosna i Hercegovina", "GovernmentForm": "Federal Republic", "HeadOfState": "Ante Jelavic", "Capital": 201, "Code2": "BA", "_id": {"Code": "BIH"}}
+{"Name": "Belarus", "Continent": "Europe", "Region": "Eastern Europe", "SurfaceArea": 207600.0, "IndepYear": 1991, "Population": 10236000, "LifeExpectancy": 68.0, "GNP": 13714.0, "GNPOld": 0.0, "LocalName": "Belarus", "GovernmentForm": "Republic", "HeadOfState": "Aljaksandr Luka\u00c2\u0161enka", "Capital": 3520, "Code2": "BY", "_id": {"Code": "BLR"}}
+{"Name": "Belize", "Continent": "North America", "Region": "Central America", "SurfaceArea": 22696.0, "IndepYear": 1981, "Population": 241000, "LifeExpectancy": 70.9, "GNP": 630.0, "GNPOld": 616.0, "LocalName": "Belize", "GovernmentForm": "Constitutional Monarchy", "HeadOfState": "Elisabeth II", "Capital": 185, "Code2": "BZ", "_id": {"Code": "BLZ"}}
+{"Name": "Bermuda", "Continent": "North America", "Region": "North America", "SurfaceArea": 53.0, "IndepYear": 0, "Population": 65000, "LifeExpectancy": 76.9, "GNP": 2328.0, "GNPOld": 2190.0, "LocalName": "Bermuda", "GovernmentForm": "Dependent Territory of the UK", "HeadOfState": "Elisabeth II", "Capital": 191, "Code2": "BM", "_id": {"Code": "BMU"}}
+{"Name": "Bolivia", "Continent": "South America", "Region": "South America", "SurfaceArea": 1098581.0, "IndepYear": 1825, "Population": 8329000, "LifeExpectancy": 63.7, "GNP": 8571.0, "GNPOld": 7967.0, "LocalName": "Bolivia", "GovernmentForm": "Republic", "HeadOfState": "Hugo B\u00c3\u00a1nzer Su\u00c3\u00a1rez", "Capital": 194, "Code2": "BO", "_id": {"Code": "BOL"}}
+{"Name": "Brazil", "Continent": "South America", "Region": "South America", "SurfaceArea": 8547403.0, "IndepYear": 1822, "Population": 170115000, "LifeExpectancy": 62.9, "GNP": 776739.0, "GNPOld": 804108.0, "LocalName": "Brasil", "GovernmentForm": "Federal Republic", "HeadOfState": "Fernando Henrique Cardoso", "Capital": 211, "Code2": "BR", "_id": {"Code": "BRA"}}
+{"Name": "Barbados", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 430.0, "IndepYear": 1966, "Population": 270000, "LifeExpectancy": 73.0, "GNP": 2223.0, "GNPOld": 2186.0, "LocalName": "Barbados", "GovernmentForm": "Constitutional Monarchy", "HeadOfState": "Elisabeth II", "Capital": 174, "Code2": "BB", "_id": {"Code": "BRB"}}
+{"Name": "Brunei", "Continent": "Asia", "Region": "Southeast Asia", "SurfaceArea": 5765.0, "IndepYear": 1984, "Population": 328000, "LifeExpectancy": 73.6, "GNP": 11705.0, "GNPOld": 12460.0, "LocalName": "Brunei Darussalam", "GovernmentForm": "Monarchy (Sultanate)", "HeadOfState": "Haji Hassan al-Bolkiah", "Capital": 538, "Code2": "BN", "_id": {"Code": "BRN"}}
+{"Name": "Bhutan", "Continent": "Asia", "Region": "Southern and Central Asia", "SurfaceArea": 47000.0, "IndepYear": 1910, "Population": 2124000, "LifeExpectancy": 52.4, "GNP": 372.0, "GNPOld": 383.0, "LocalName": "Druk-Yul", "GovernmentForm": "Monarchy", "HeadOfState": "Jigme Singye Wangchuk", "Capital": 192, "Code2": "BT", "_id": {"Code": "BTN"}}
+{"Name": "Bouvet Island", "Continent": "Antarctica", "Region": "Antarctica", "SurfaceArea": 59.0, "IndepYear": 0, "Population": 0, "LifeExpectancy": 0.0, "GNP": 0.0, "GNPOld": 0.0, "LocalName": "Bouvet\u00c3\u00b8ya", "GovernmentForm": "Dependent Territory of Norway", "HeadOfState": "Harald V", "Capital": 0, "Code2": "BV", "_id": {"Code": "BVT"}}
+{"Name": "Botswana", "Continent": "Africa", "Region": "Southern Africa", "SurfaceArea": 581730.0, "IndepYear": 1966, "Population": 1622000, "LifeExpectancy": 39.3, "GNP": 4834.0, "GNPOld": 4935.0, "LocalName": "Botswana", "GovernmentForm": "Republic", "HeadOfState": "Festus G. Mogae", "Capital": 204, "Code2": "BW", "_id": {"Code": "BWA"}}
+{"Name": "Central African Republic", "Continent": "Africa", "Region": "Central Africa", "SurfaceArea": 622984.0, "IndepYear": 1960, "Population": 3615000, "LifeExpectancy": 44.0, "GNP": 1054.0, "GNPOld": 993.0, "LocalName": "Centrafrique/B\u00c3\u00aa-Afr\u00c3\u00aeka", "GovernmentForm": "Republic", "HeadOfState": "Ange-F\u00c3\u00a9lix Patass\u00c3\u00a9", "Capital": 1889, "Code2": "CF", "_id": {"Code": "CAF"}}
+{"Name": "Canada", "Continent": "North America", "Region": "North America", "SurfaceArea": 9970610.0, "IndepYear": 1867, "Population": 31147000, "LifeExpectancy": 79.4, "GNP": 598862.0, "GNPOld": 625626.0, "LocalName": "Canada", "GovernmentForm": "Constitutional Monarchy, Federation", "HeadOfState": "Elisabeth II", "Capital": 1822, "Code2": "CA", "_id": {"Code": "CAN"}}
+{"Name": "Cocos (Keeling) Islands", "Continent": "Oceania", "Region": "Australia and New Zealand", "SurfaceArea": 14.0, "IndepYear": 0, "Population": 600, "LifeExpectancy": 0.0, "GNP": 0.0, "GNPOld": 0.0, "LocalName": "Cocos (Keeling) Islands", "GovernmentForm": "Territory of Australia", "HeadOfState": "Elisabeth II", "Capital": 2317, "Code2": "CC", "_id": {"Code": "CCK"}}
+{"Name": "Switzerland", "Continent": "Europe", "Region": "Western Europe", "SurfaceArea": 41284.0, "IndepYear": 1499, "Population": 7160400, "LifeExpectancy": 79.6, "GNP": 264478.0, "GNPOld": 256092.0, "LocalName": "Schweiz/Suisse/Svizzera/Svizra", "GovernmentForm": "Federation", "HeadOfState": "Adolf Ogi", "Capital": 3248, "Code2": "CH", "_id": {"Code": "CHE"}}
+{"Name": "Chile", "Continent": "South America", "Region": "South America", "SurfaceArea": 756626.0, "IndepYear": 1810, "Population": 15211000, "LifeExpectancy": 75.7, "GNP": 72949.0, "GNPOld": 75780.0, "LocalName": "Chile", "GovernmentForm": "Republic", "HeadOfState": "Ricardo Lagos Escobar", "Capital": 554, "Code2": "CL", "_id": {"Code": "CHL"}}
+{"Name": "China", "Continent": "Asia", "Region": "Eastern Asia", "SurfaceArea": 9572900.0, "IndepYear": -1523, "Population": 1277558000, "LifeExpectancy": 71.4, "GNP": 982268.0, "GNPOld": 917719.0, "LocalName": "Zhongquo", "GovernmentForm": "People'sRepublic", "HeadOfState": "Jiang Zemin", "Capital": 1891, "Code2": "CN", "_id": {"Code": "CHN"}}
+{"Name": "C\u00c3\u00b4te d\u00c2\u2019Ivoire", "Continent": "Africa", "Region": "Western Africa", "SurfaceArea": 322463.0, "IndepYear": 1960, "Population": 14786000, "LifeExpectancy": 45.2, "GNP": 11345.0, "GNPOld": 10285.0, "LocalName": "C\u00c3\u00b4te d\u00c2\u2019Ivoire", "GovernmentForm": "Republic", "HeadOfState": "Laurent Gbagbo", "Capital": 2814, "Code2": "CI", "_id": {"Code": "CIV"}}
+{"Name": "Cameroon", "Continent": "Africa", "Region": "Central Africa", "SurfaceArea": 475442.0, "IndepYear": 1960, "Population": 15085000, "LifeExpectancy": 54.8, "GNP": 9174.0, "GNPOld": 8596.0, "LocalName": "Cameroun/Cameroon", "GovernmentForm": "Republic", "HeadOfState": "Paul Biya", "Capital": 1804, "Code2": "CM", "_id": {"Code": "CMR"}}
+{"Name": "Congo, The Democratic Republic of the", "Continent": "Africa", "Region": "Central Africa", "SurfaceArea": 2344858.0, "IndepYear": 1960, "Population": 51654000, "LifeExpectancy": 48.8, "GNP": 6964.0, "GNPOld": 2474.0, "LocalName": "R\u00c3\u00a9publique D\u00c3\u00a9mocratique du Congo", "GovernmentForm": "Republic", "HeadOfState": "Joseph Kabila", "Capital": 2298, "Code2": "CD", "_id": {"Code": "COD"}}
+{"Name": "Congo", "Continent": "Africa", "Region": "Central Africa", "SurfaceArea": 342000.0, "IndepYear": 1960, "Population": 2943000, "LifeExpectancy": 47.4, "GNP": 2108.0, "GNPOld": 2287.0, "LocalName": "Congo", "GovernmentForm": "Republic", "HeadOfState": "Denis Sassou-Nguesso", "Capital": 2296, "Code2": "CG", "_id": {"Code": "COG"}}
+{"Name": "Cook Islands", "Continent": "Oceania", "Region": "Polynesia", "SurfaceArea": 236.0, "IndepYear": 0, "Population": 20000, "LifeExpectancy": 71.1, "GNP": 100.0, "GNPOld": 0.0, "LocalName": "The Cook Islands", "GovernmentForm": "Nonmetropolitan Territory of New Zealand", "HeadOfState": "Elisabeth II", "Capital": 583, "Code2": "CK", "_id": {"Code": "COK"}}
+{"Name": "Colombia", "Continent": "South America", "Region": "South America", "SurfaceArea": 1138914.0, "IndepYear": 1810, "Population": 42321000, "LifeExpectancy": 70.3, "GNP": 102896.0, "GNPOld": 105116.0, "LocalName": "Colombia", "GovernmentForm": "Republic", "HeadOfState": "Andr\u00c3\u00a9s Pastrana Arango", "Capital": 2257, "Code2": "CO", "_id": {"Code": "COL"}}
+{"Name": "Comoros", "Continent": "Africa", "Region": "Eastern Africa", "SurfaceArea": 1862.0, "IndepYear": 1975, "Population": 578000, "LifeExpectancy": 60.0, "GNP": 4401.0, "GNPOld": 4361.0, "LocalName": "Komori/Comores", "GovernmentForm": "Republic", "HeadOfState": "Azali Assoumani", "Capital": 2295, "Code2": "KM", "_id": {"Code": "COM"}}
+{"Name": "Cape Verde", "Continent": "Africa", "Region": "Western Africa", "SurfaceArea": 4033.0, "IndepYear": 1975, "Population": 428000, "LifeExpectancy": 68.9, "GNP": 435.0, "GNPOld": 420.0, "LocalName": "Cabo Verde", "GovernmentForm": "Republic", "HeadOfState": "Ant\u00c3\u00b3nio Mascarenhas Monteiro", "Capital": 1859, "Code2": "CV", "_id": {"Code": "CPV"}}
+{"Name": "Costa Rica", "Continent": "North America", "Region": "Central America", "SurfaceArea": 51100.0, "IndepYear": 1821, "Population": 4023000, "LifeExpectancy": 75.8, "GNP": 10226.0, "GNPOld": 9757.0, "LocalName": "Costa Rica", "GovernmentForm": "Republic", "HeadOfState": "Miguel \u00c3\u0081ngel Rodr\u00c3\u00adguez Echeverr\u00c3\u00ada", "Capital": 584, "Code2": "CR", "_id": {"Code": "CRI"}}
+{"Name": "Cuba", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 110861.0, "IndepYear": 1902, "Population": 11201000, "LifeExpectancy": 76.2, "GNP": 17843.0, "GNPOld": 18862.0, "LocalName": "Cuba", "GovernmentForm": "Socialistic Republic", "HeadOfState": "Fidel Castro Ruz", "Capital": 2413, "Code2": "CU", "_id": {"Code": "CUB"}}
+{"Name": "Christmas Island", "Continent": "Oceania", "Region": "Australia and New Zealand", "SurfaceArea": 135.0, "IndepYear": 0, "Population": 2500, "LifeExpectancy": 0.0, "GNP": 0.0, "GNPOld": 0.0, "LocalName": "Christmas Island", "GovernmentForm": "Territory of Australia", "HeadOfState": "Elisabeth II", "Capital": 1791, "Code2": "CX", "_id": {"Code": "CXR"}}
+{"Name": "Cayman Islands", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 264.0, "IndepYear": 0, "Population": 38000, "LifeExpectancy": 78.9, "GNP": 1263.0, "GNPOld": 1186.0, "LocalName": "Cayman Islands", "GovernmentForm": "Dependent Territory of the UK", "HeadOfState": "Elisabeth II", "Capital": 553, "Code2": "KY", "_id": {"Code": "CYM"}}
+{"Name": "Cyprus", "Continent": "Asia", "Region": "Middle East", "SurfaceArea": 9251.0, "IndepYear": 1960, "Population": 754700, "LifeExpectancy": 76.7, "GNP": 9333.0, "GNPOld": 8246.0, "LocalName": "K\u00c3\u00bdpros/Kibris", "GovernmentForm": "Republic", "HeadOfState": "Glafkos Klerides", "Capital": 2430, "Code2": "CY", "_id": {"Code": "CYP"}}
+{"Name": "Czech Republic", "Continent": "Europe", "Region": "Eastern Europe", "SurfaceArea": 78866.0, "IndepYear": 1993, "Population": 10278100, "LifeExpectancy": 74.5, "GNP": 55017.0, "GNPOld": 52037.0, "LocalName": "\u00c2\u00b8esko", "GovernmentForm": "Republic", "HeadOfState": "V\u00c3\u00a1clav Havel", "Capital": 3339, "Code2": "CZ", "_id": {"Code": "CZE"}}
+{"Name": "Germany", "Continent": "Europe", "Region": "Western Europe", "SurfaceArea": 357022.0, "IndepYear": 1955, "Population": 82164700, "LifeExpectancy": 77.4, "GNP": 2133367.0, "GNPOld": 2102826.0, "LocalName": "Deutschland", "GovernmentForm": "Federal Republic", "HeadOfState": "Johannes Rau", "Capital": 3068, "Code2": "DE", "_id": {"Code": "DEU"}}
+{"Name": "Djibouti", "Continent": "Africa", "Region": "Eastern Africa", "SurfaceArea": 23200.0, "IndepYear": 1977, "Population": 638000, "LifeExpectancy": 50.8, "GNP": 382.0, "GNPOld": 373.0, "LocalName": "Djibouti/Jibuti", "GovernmentForm": "Republic", "HeadOfState": "Ismail Omar Guelleh", "Capital": 585, "Code2": "DJ", "_id": {"Code": "DJI"}}
+{"Name": "Dominica", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 751.0, "IndepYear": 1978, "Population": 71000, "LifeExpectancy": 73.4, "GNP": 256.0, "GNPOld": 243.0, "LocalName": "Dominica", "GovernmentForm": "Republic", "HeadOfState": "Vernon Shaw", "Capital": 586, "Code2": "DM", "_id": {"Code": "DMA"}}
+{"Name": "Denmark", "Continent": "Europe", "Region": "Nordic Countries", "SurfaceArea": 43094.0, "IndepYear": 800, "Population": 5330000, "LifeExpectancy": 76.5, "GNP": 174099.0, "GNPOld": 169264.0, "LocalName": "Danmark", "GovernmentForm": "Constitutional Monarchy", "HeadOfState": "Margrethe II", "Capital": 3315, "Code2": "DK", "_id": {"Code": "DNK"}}
+{"Name": "Dominican Republic", "Continent": "North America", "Region": "Caribbean", "SurfaceArea": 48511.0, "IndepYear": 1844, "Population": 8495000, "LifeExpectancy": 73.2, "GNP": 15846.0, "GNPOld": 15076.0, "LocalName": "Rep\u00c3\u00bablica Dominicana", "GovernmentForm": "Republic", "HeadOfState": "Hip\u00c3\u00b3lito Mej\u00c3\u00ada Dom\u00c3\u00adnguez", "Capital": 587, "Code2": "DO", "_id": {"Code": "DOM"}}
+{"Name": "Algeria", "Continent": "Africa", "Region": "Northern Africa", "SurfaceArea": 2381741.0, "IndepYear": 1962, "Population": 31471000, "LifeExpectancy": 69.7, "GNP": 49982.0, "GNPOld": 46966.0, "LocalName": "Al-Jaza\u00c2\u2019ir/Alg\u00c3\u00a9rie", "GovernmentForm": "Republic", "HeadOfState": "Abdelaziz Bouteflika", "Capital": 35, "Code2": "DZ", "_id": {"Code": "DZA"}}
+{"Name": "Ecuador", "Continent": "South America", "Region": "South America", "SurfaceArea": 283561.0, "IndepYear": 1822, "Population": 12646000, "LifeExpectancy": 71.1, "GNP": 19770.0, "GNPOld": 19769.0, "LocalName": "Ecuador", "GovernmentForm": "Republic", "HeadOfState": "Gustavo Noboa Bejarano", "Capital": 594, "Code2": "EC", "_id": {"Code": "ECU"}}
+{"Name": "Egypt", "Continent": "Africa", "Region": "Northern Africa", "SurfaceArea": 1001449.0, "IndepYear": 1922, "Population": 68470000, "LifeExpectancy": 63.3, "GNP": 82710.0, "GNPOld": 75617.0, "LocalName": "Misr", "GovernmentForm": "Republic", "HeadOfState": "Hosni Mubarak", "Capital": 608, "Code2": "EG", "_id": {"Code": "EGY"}}
+{"Name": "Eritrea", "Continent": "Africa", "Region": "Eastern Africa", "SurfaceArea": 117600.0, "IndepYear": 1993, "Population": 3850000, "LifeExpectancy": 55.8, "GNP": 650.0, "GNPOld": 755.0, "LocalName": "Ertra", "GovernmentForm": "Republic", "HeadOfState": "Isayas Afewerki [Isaias Afwerki]", "Capital": 652, "Code2": "ER", "_id": {"Code": "ERI"}}
+{"Name": "Western Sahara", "Continent": "Africa", "Region": "Northern Africa", "SurfaceArea": 266000.0, "IndepYear": 0, "Population": 293000, "LifeExpectancy": 49.8, "GNP": 60.0, "GNPOld": 0.0, "LocalName": "As-Sahrawiya", "GovernmentForm": "Occupied by Marocco", "HeadOfState": "Mohammed Abdel Aziz", "Capital": 2453, "Code2": "EH", "_id": {"Code": "ESH"}}
+{"Name": "Spain", "Continent": "Europe", "Region": "Southern Europe", "SurfaceArea": 505992.0, "IndepYear": 1492, "Population": 39441700, "LifeExpectancy": 78.8, "GNP": 553233.0, "GNPOld": 532031.0, "LocalName": "Espa\u00c3\u00b1a", "GovernmentForm": "Constitutional Monarchy", "HeadOfState": "Juan Carlos I", "Capital": 653, "Code2": "ES", "_id": {"Code": "ESP"}}
+{"Name": "Estonia", "Continent": "Europe", "Region": "Baltic Countries", "SurfaceArea": 45227.0, "IndepYear": 1991, "Population": 1439200, "LifeExpectancy": 69.5, "GNP": 5328.0, "GNPOld": 3371.0, "LocalName": "Eesti", "GovernmentForm": "Republic", "HeadOfState": "Lennart Meri", "Capital": 3791, "Code2": "EE", "_id": {"Code": "EST"}}
+{"Name": "Ethiopia", "Continent": "Africa", "Region": "Eastern Africa", "SurfaceArea": 1104300.0, "IndepYear": -1000, "Population": 62565000, "LifeExpectancy": 45.2, "GNP": 6353.0, "GNPOld": 6180.0, "LocalName": "YeItyop\u00c2\u00b4iya", "GovernmentForm": "Republic", "HeadOfState": "Negasso Gidada", "Capital": 756, "Code2": "ET", "_id": {"Code": "ETH"}}
+{"Name": "Finland", "Continent": "Europe", "Region": "Nordic Countries", "SurfaceArea": 338145.0, "IndepYear": 1917, "Population": 5171300, "LifeExpectancy": 77.4, "GNP": 121914.0, "GNPOld": 119833.0, "LocalName": "Suomi", "GovernmentForm": "Republic", "HeadOfState": "Tarja Halonen", "Capital": 3236, "Code2": "FI", "_id": {"Code": "FIN"}}
+{"Name": "Fiji Islands", "Continent": "Oceania", "Region": "Melanesia", "SurfaceArea": 18274.0, "IndepYear": 1970, "Population": 817000, "LifeExpectancy": 67.9, "GNP": 1536.0, "GNPOld": 2149.0, "LocalName": "Fiji Islands", "GovernmentForm": "Republic", "HeadOfState": "Josefa Iloilo", "Capital": 764, "Code2": "FJ", "_id": {"Code": "FJI"}}
+{"Name": "Falkland Islands", "Continent": "South America", "Region": "South America", "SurfaceArea": 12173.0, "IndepYear": 0, "Population": 2000, "LifeExpectancy": 0.0, "GNP": 0.0, "GNPOld": 0.0, "LocalName": "Falkland Islands", "GovernmentForm": "Dependent Territory of the UK", "HeadOfState": "Elisabeth II", "Capital": 763, "Code2": "FK", "_id": {"Code": "FLK"}}
+{"Name": "France", "Continent": "Europe", "Region": "Western Europe", "SurfaceArea": 551500.0, "IndepYear": 843, "Population": 59225700, "LifeExpectancy": 78.8, "GNP": 1424285.0, "GNPOld": 1392448.0, "LocalName": "France", "GovernmentForm": "Republic", "HeadOfState": "Jacques Chirac", "Capital": 2974, "Code2": "FR", "_id": {"Code": "FRA"}}
+{"Name": "Faroe Islands", "Continent": "Europe", "Region": "Nordic Countries", "SurfaceArea": 1399.0, "IndepYear": 0, "Population": 43000, "LifeExpectancy": 78.4, "GNP": 0.0, "GNPOld": 0.0, "LocalName": "F\u00c3\u00b8royar", "GovernmentForm": "Part of Denmark", "HeadOfState": "Margrethe II", "Capital": 901, "Code2": "FO", "_id": {"Code": "FRO"}}
+
+
+Please write a query: Find out how many countries do not have capital cities, using the fact that such countries do not join with any city (i.e., their capital city ID does not show up in the city collection).
+
+
+
+
+
+
+
+
+
+
+I am trying to find the top-10 countries ranked by the number of its cities whose population is more than 100,000. Here's my query:
+db.city.aggregate([
+  { $match: {population: { $gt: 100000 } } },
+  { $lookup: {
+    from: 'country',
+    localField: 'CountryCode',
+    foreignField: '_id.Code',
+    as: 'cityCountry'
+  } },
+  { $group:
+    {
+      _id: "$cityCountry.Name", Number_of_Cities: { $sum: 1} 
+    }
+  },
+  { $sort: { Number_of_Cities: 1 } },
+  { $limit: 10}
+])
+
+why am i not getting any outputs?
+
+
+
+
+
+
+
+
+
+
+
+
+
+this is countrylanguage. 
+{"IsOfficial": "F", "Percentage": 0.3, "_id": {"CountryCode": "UKR", "Language": "Hungarian"}}
+{"IsOfficial": "F", "Percentage": 0.1, "_id": {"CountryCode": "UKR", "Language": "Polish"}}
+{"IsOfficial": "F", "Percentage": 0.7, "_id": {"CountryCode": "UKR", "Language": "Romanian"}}
+{"IsOfficial": "F", "Percentage": 32.9, "_id": {"CountryCode": "UKR", "Language": "Russian"}}
+{"IsOfficial": "T", "Percentage": 64.7, "_id": {"CountryCode": "UKR", "Language": "Ukrainian"}}
+{"IsOfficial": "T", "Percentage": 0.0, "_id": {"CountryCode": "UMI", "Language": "English"}}
+{"IsOfficial": "T", "Percentage": 95.7, "_id": {"CountryCode": "URY", "Language": "Spanish"}}
+{"IsOfficial": "F", "Percentage": 0.6, "_id": {"CountryCode": "USA", "Language": "Chinese"}}
+{"IsOfficial": "T", "Percentage": 86.2, "_id": {"CountryCode": "USA", "Language": "English"}}
+{"IsOfficial": "F", "Percentage": 0.7, "_id": {"CountryCode": "USA", "Language": "French"}}
+{"IsOfficial": "F", "Percentage": 0.7, "_id": {"CountryCode": "USA", "Language": "German"}}
+{"IsOfficial": "F", "Percentage": 0.6, "_id": {"CountryCode": "USA", "Language": "Italian"}}
+{"IsOfficial": "F", "Percentage": 0.2, "_id": {"CountryCode": "USA", "Language": "Japanese"}}
+{"IsOfficial": "F", "Percentage": 0.3, "_id": {"CountryCode": "USA", "Language": "Korean"}}
+{"IsOfficial": "F", "Percentage": 0.3, "_id": {"CountryCode": "USA", "Language": "Polish"}}
+{"IsOfficial": "F", "Percentage": 0.2, "_id": {"CountryCode": "USA", "Language": "Portuguese"}}
+{"IsOfficial": "F", "Percentage": 7.5, "_id": {"CountryCode": "USA", "Language": "Spanish"}}
+{"IsOfficial": "F", "Percentage": 0.4, "_id": {"CountryCode": "USA", "Language": "Tagalog"}}
+{"IsOfficial": "F", "Percentage": 0.2, "_id": {"CountryCode": "USA", "Language": "Vietnamese"}}
+{"IsOfficial": "F", "Percentage": 2.0, "_id": {"CountryCode": "UZB", "Language": "Karakalpak"}}
+{"IsOfficial": "F", "Percentage": 3.8, "_id": {"CountryCode": "UZB", "Language": "Kazakh"}}
+{"IsOfficial": "F", "Percentage": 10.9, "_id": {"CountryCode": "UZB", "Language": "Russian"}}
+{"IsOfficial": "F", "Percentage": 4.4, "_id": {"CountryCode": "UZB", "Language": "Tadzhik"}}
+{"IsOfficial": "F", "Percentage": 1.8, "_id": {"CountryCode": "UZB", "Language": "Tatar"}}
+{"IsOfficial": "T", "Percentage": 72.6, "_id": {"CountryCode": "UZB", "Language": "Uzbek"}}
+{"IsOfficial": "T", "Percentage": 0.0, "_id": {"CountryCode": "VAT", "Language": "Italian"}}
+{"IsOfficial": "F", "Percentage": 99.1, "_id": {"CountryCode": "VCT", "Language": "Creole English"}}
+{"IsOfficial": "T", "Percentage": 0.0, "_id": {"CountryCode": "VCT", "Language": "English"}}
+{"IsOfficial": "F", "Percentage": 0.4, "_id": {"CountryCode": "VEN", "Language": "Goajiro"}}
+{"IsOfficial": "T", "Percentage": 96.9, "_id": {"CountryCode": "VEN", "Language": "Spanish"}}
+{"IsOfficial": "F", "Percentage": 0.1, "_id": {"CountryCode": "VEN", "Language": "Warrau"}}
+{"IsOfficial": "T", "Percentage": 0.0, "_id": {"CountryCode": "VGB", "Language": "English"}}
+{"IsOfficial": "T", "Percentage": 81.7, "_id": {"CountryCode": "VIR", "Language": "English"}}
+{"IsOfficial": "F", "Percentage": 2.5, "_id": {"CountryCode": "VIR", "Language": "French"}}
+{"IsOfficial": "F", "Percentage": 13.3, "_id": {"CountryCode": "VIR", "Language": "Spanish"}}
+
+
+ Find out countries which have English as one of their official languages and spoken by at least 90% of its population. Return the country code only.

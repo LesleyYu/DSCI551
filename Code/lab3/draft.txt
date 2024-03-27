@@ -1,0 +1,145 @@
+
+2. How many cities are there in each District(States) in the United States
+
+直接用CountryCode ‘USA’
+db.city.aggregate(
+  {$match:
+    {CountryCode: {$eq: 'USA' } }
+  },
+  {$group:
+    {
+      _id: '$District', total: {$sum: 1}
+    }
+  }
+)
+
+从country table里找到CountryCode ‘USA’
+db.city.aggregate(
+  {$lookup: {
+    from: 'country',
+    localField: 'CountryCode',
+    foreignField: '_id.Code',
+    as: 'res'
+    }
+  },
+  {$match:
+    {'res._id.Code': {$eq: {$CountryCode} } }
+  },
+  {$group:
+    {
+      _id: '$District', total: {$sum: 1}
+    }
+  }
+)
+// error: $CountryCode is not defined
+所以要定义一个变量去找对应
+
+const targetCode = db.country.findOne( { Name: 'United States' })._id.Code;
+
+db.city.aggregate(
+  { $match:
+    {'CountryCode': targetCode}
+  },
+  {$group:
+    {
+      _id: '$District', total: {$sum: 1}
+    }
+  },
+  { $group:
+    {_id: null, count: { $sum: 1 } }
+  },
+  { $project:
+    { _id: 0 }
+  }
+)
+这个用group来count，可以简化。见最终版本。
+
+
+
+
+3. Find out how many countries do not have capital cities
+
+db.country.count().aggregate(
+  { $match:
+    {Capital: {$eq: 0}}
+  },
+  { $group:
+    {_id: 'Name', count:{$sum: 1} }
+  }
+)
+但是返回每一个country的名字了，不对
+
+
+
+
+5. 
+
+先找所有Population大于 100,000的city
+db.city.aggregate([
+  { $match: { Population: { $gt: 100000 } } },
+  { $limit: 10}
+])
+
+再用 $group 方法来 count 一下 Number_of_Cities，并排序
+db.city.aggregate([
+  { $match: { Population: { $gt: 100000 } } },
+  { $group:
+    {
+      _id: "$CountryCode", Number_of_Cities: { $sum: 1 } 
+    }
+  },
+  { $sort: { Number_of_Cities: 1 } },
+  { $limit: 10}
+])
+得到：
+[
+  { _id: 'ESH', Number_of_Cities: 1 },
+  { _id: 'DJI', Number_of_Cities: 1 },
+  { _id: 'GNB', Number_of_Cities: 1 },
+  { _id: 'RWA', Number_of_Cities: 1 },
+  { _id: 'MKD', Number_of_Cities: 1 },
+  { _id: 'LBR', Number_of_Cities: 1 },
+  { _id: 'NAM', Number_of_Cities: 1 },
+  { _id: 'QAT', Number_of_Cities: 1 },
+  { _id: 'LSO', Number_of_Cities: 1 },
+  { _id: 'MLI', Number_of_Cities: 1 }
+]
+
+再加上 $lookup。 见最终版本。
+
+
+8. 
+db.countrylanguage.aggregate([
+  { $match: 
+    {
+      "_id.Language":  'English',
+      Percentage: { $gt: 90 },
+      IsOfficial: "T"
+    }
+  }
+])
+这是没有project的版本。
+注意这个query，在 aggregate 和 match 的时候通常不用给 attribute 加引号，但是如果是subelement就会需要。
+
+db.countrylanguage.aggregate([
+  { $match: 
+    {
+      "_id": { $elemMatch: { "Language": 'English' } },
+      Percentage: { $gt: 90 },
+      IsOfficial: "T"
+    }
+  }
+])
+用 elemMatch 怎么没结果啊？？？？
+
+
+
+
+9. 
+
+db.countrylanguage.find([
+  { $match:
+    { "_id.CountryCode": { $in: [targetCode1, targetCode2] } }
+  },
+  { ??? }
+])

@@ -1,0 +1,30 @@
+python hw1.py add_book 1 '{"author": "me", "title": "333", "year": 2024, "price": 2.4}'
+
+python hw1.py add_book 3 '{"author": "Julius", "title": "tongji", "year": 2023, "price": 43}'
+
+python hw1.py add_book 13 '{"author": "Jiahao", "title": "hi", "year": 2022, "price": 12}'
+
+python hw1.py add_book 12 '{"author": "xiaoying", "title": "how to get 402", "year": 2022, "price": 23}'
+
+python hw1.py add_book 12 '{"author": "xiaoyin", "title": "from 0 to 1", "year": 2012, "price": 54}'
+
+python hw1.py add_book 74 '{"author": "Julius", "title": "Universal Studio", "year": 2024, "price": 179}'
+
+python hw1.py add_book 74 '{"author": "Julius", "title": "Cant Help", "year": 2020, "price": 19}'
+
+
+
+
+
+
+python hw1.py search_by_author "John Smith"
+
+python hw1.py search_by_author "Julius"
+
+
+
+
+
+
+
+python3 hw1.py search_by_year 2022

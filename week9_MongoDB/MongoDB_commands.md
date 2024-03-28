@@ -225,10 +225,10 @@ use _$match_ keyword.
 
 ##### Projection in aggregate
 
-``` db.product.aggregate(
+```txt
 db.product.aggregate(
-	{$group:
-    {_id: null, max: {$max: "$qty"}}
+  {$group:
+    {_id: null, max: {$max: "$qty"} }
   }
 )
 
@@ -241,15 +241,14 @@ Remove _id from result:
 ```
 db.product.aggregate(
     {$group:
-      {_id: null, max: {$max:"$qty"}}
+      {_id: null, max: {$max:"$qty"} }
     }, 
-    {$project: {_id: 0}}
+    {$project: {_id: 0} }
 )
 
 output:
 { "max" : 45 }
 ```
-
 
 
 ### $lookup for joining two collections

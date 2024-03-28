@@ -30,6 +30,16 @@ OUTPUT:
 
 QUERY:
 // const targetCode = db.country.findOne( { Name: 'United States' })._id.Code;
+db.city.aggregate([
+  { $match:
+    { CountryCode: "USA"}
+  },
+  { $group: 
+    { _id: "$District", total_states: { $sum: 1 } }
+  },
+  { $count: "" }
+])
+
 
 db.city.aggregate(
   { $match:
@@ -37,7 +47,7 @@ db.city.aggregate(
   },
   {$group:
     {
-      _id: '$District', total: {$sum: 1}
+      _id: '$District'
     }
   },
   { $count: "number of States"}
@@ -86,7 +96,6 @@ OUTPUT:
 
 
 5. Find out the top-10 countries ranked by the number of its cities whose population is more than 100,000. Return country code and the number of such cities only.
-
 QUERY:
 db.city.aggregate([
   { $match: { Population: { $gt: 100000 } } },

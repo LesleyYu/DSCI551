@@ -1,0 +1,44 @@
+my python spark rdd file looks like this.
+
+from pyspark.sql import SparkSession
+
+# Initialize SparkSession
+spark = SparkSession.builder.appName("Film Dataset Analysis").getOrCreate()
+
+# Load the datasets as DataFrames
+film_df = spark.read.csv('film.csv', header=True, inferSchema=True)
+actor_df = spark.read.csv('actor.csv', header=True, inferSchema=True)
+film_actor_df = spark.read.csv('film_actor.csv', header=True, inferSchema=True)
+
+# Convert DataFrames to RDDs
+film_rdd = film_df.rdd
+actor_rdd = actor_df.rdd
+film_actor_rdd = film_actor_df.rdd
+
+def query_e(film_rdd):
+    result = (
+            film_rdd
+            .map(lambda row: (row["rental_duration"], row["rating"], row["length"]))
+            .groupBy(lambda x: (x[0], x[1]))
+            .mapValues(lambda lengths: (min(lengths), max(lengths), sum(lengths) / len(lengths), len(lengths)))
+            .map(lambda x: (x[0][0], x[0][1], x[1][0], x[1][1], x[1][2], x[1][3]))
+            .sortBy(lambda x: x[0], ascending=False)
+        )
+    return result
+
+
+def main():
+    print("Query E:")
+    print(query_e(film_rdd).take(10))
+
+
+if __name__ == "__main__":
+    main()
+
+
+Can you add code into it to search for : 
+SELECT rental_duration, rating, min(length), max(length), avg(length), count(length) 
+FROM film
+GROUP BY rental_duration, rating 
+ORDER BY rental_duration desc 
+LIMIT 10
